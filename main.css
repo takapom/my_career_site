@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
 
+.sns_container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.insta{
+    width: 50px;
+}
+
+
 body {
     background-color: #0d0d0d;
     color: white;
@@ -19,8 +30,11 @@ body {
     height: auto; /* 高さを自動調整（縦横比を維持） */
     }
 
-    .big-box {
-        width: 100%;  /* 幅 */
+
+.big-box {
+        margin: 10% 10%;
+        display: flex;
+        width: 80%;  /* 幅 */
         height: 200px; /* 高さ */
         border: 3px solid #0A84FF; /* 青い枠線 */
         background-color: rgb(105, 34, 105); /* 背景色（黒系） */
@@ -28,7 +42,7 @@ body {
         font-size: 30px; /* 文字の大きさ */
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         display: flex; /* フレックスボックスを適用 */
-        justify-content: center; /* 横方向の中央揃え */
+        justify-content: center ; /* 横方向の中央揃え */
         align-items: center; /* 縦方向の中央揃え */
         text-align: center; /* テキストを中央揃え */
         border-radius: 20px;
@@ -76,4 +90,68 @@ body {
     background-color: #0ff;
     color: #111;
     box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+
+
+.box {
+    color: #484d51;
+    width: 50%;  /* 画面幅の50% */
+    max-width: 90%; /* 最大幅を設定 */
+    height: 120px;
+    background-color: lightcoral;
+    border: 3px solid darkred;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skill {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(105, 34, 105);
+    color: #0ff;
+    width: 80%;
+    height: auto;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0ff;
+    transition: 0.3s;
+    margin-top: 40px;
+}
+
+.skill-icon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 100px;
+}
+
+fa-brands fa-python fa-4x{
+    display: flex;
+    justify-content: left;
+}
+
+#skill_text{
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    font-family: "Roboto", serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    
 }
